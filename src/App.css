@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+body{
+  font-family: "ROBOTO Condensed" sans-serif;
+}
+
+:root {
+  --primary-white : #fff;
+  --primary-orange : #f9ab00;
+  --primary-dark : rgba(255,255,255,0);
+  --primary-red : #ef4035;
+  --primary-hover-red : #f33501;
+  --primary-blue : 	hsla(175, 94%, 52%, 0.945);
+  --primary-shining-blue : #d0d9d8;
+}
+
+/*********************NAVBAR*************************/
+
+
+nav{
+  z-index: 2;
+  background-color: #000000 !important;
+}
+.logo{
+  width: 80px;
+  margin-top: 20px;
+}
+
+/**********************MENU LINKS*************************/
+
+nav a.nav-link{
+  margin-left: 12px;
+  margin-right: 12px;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+}
+
+
+.navbar-nav > li > a{
+  color: var(--primary-white) !important;
+}
+
+
+.navbar-brand{
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 4rem !important;
+}
+
+
+
+.navbar-nav > li > a.active:focus{
+  border-bottom: 3px solid var(--primary-orange);
+}
+.navbar-nav > li > a:hover{
+  border-bottom: 3px solid var(--primary-orange);
+}
+.logo h4{
+  font-size: 15px;
+}
+
+/*********************HEADER***************************/
+
+.header-wraper{
+  position: relative;
+  background: url(wall_and_laptop_background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+ }
+
+ 
+.main-info{
+  display: flex;
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 5;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.main-info h1{
+  color: var(--primary-orange);
+  text-align: center;
+  font-family: "ROBOTO Condensed" sans-serif;
+  margin-top: 30px;
+}
+
+.myimage{
+  z-index: 2;
+  
+}
+
+
+/************TYPED TEXT*******************/
+
+.typed-text{
+  font-size: 3rem;
+  color: var(--primary-shining-blue) !important;
+}
+
+
+
+/************PARTICLE JS*******************/
+
+.tsparticles-canvas-el{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+
+
+/*********************Contacts***************/
+
+.c-contact {
+  margin-top: 30px;
+  margin-bottom: 100px;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50%;
+  justify-content: center;
+  margin-left: 250px;
+}
+.c-contact h2 {
+  margin-top: 2rem;
+  text-align: center;
+  
+}
+.c-contact__form {
+  margin-top: 1rem;
+  justify-content: center;
+
+}
+.c-contact__form label, .c-contact__form input, .c-contact__form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.25rem;
+  align-items: center;
+  justify-content: center;
+}
+.c-contact__form label {
+  margin-top: 0.25rem;
+}
+.c-contact__form textarea {
+  height: auto;
+}
+.c-contact__form button {
+  display: block;
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  background-color: darkturquoise;
+  position:absolute;
+
+  
+}
+
+
+/***************footer*******************/
+
+.footer{
+  justify-content: center;
+  background-color: rgb(32, 46, 46);
+  align-items: center;
+  text-align: center;
+  height: 120px;
+  background-color: darkslategray;
+  justify-content: center;
+  align-items: center;
+}
+.main-infoo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  background-color: darkslategray;
+  z-index: 1;
+  
+}
+.main-infoo myimage1{
+  margin-right: 20px;
+}
+.name{
+  margin-bottom: 20px;
+  color: #d0d9d8 !important;
+  background-color: darkslategray;
+  margin-top: 20px;
+  
+}
+
+/******************project**********************/
+
+
+.project-container{
+  display: flex;
+  align-items: center;
+  background-color: #d0d9d8;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+
+.project-info{
+  background-color: #d0d9d8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-info h1{
+  background-color: #d0d9d8;
+  margin-top: 50px;
+  color: #000;
+  
+}
+
+.card-view{
+  margin: 50px;
+  background-color: #fff;
+}
+
+
+/**************** card******************/
+.cards-container{
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px -5px;
+  box-shadow: #fff;
+  transition: 0.3s;
+  animation: ease-in;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-subtitle h4{
+  font-size: 13px;
+  margin-top: -10px;
+  margin-bottom: -12px;
+}
+.image-container img{
+  overflow: hidden;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.cards-container:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px 0px;
+}
+/************HEADER MAIN OFFER BUTTON*******************/
+
+.btn-main-offer{
+  border: 1px solid var(--primary-red);  
+  text-transform: uppercase;
+  border-radius: 8px;
+  padding: 5px 5px 5px 5px;
+  /* color: var(--primary-white); */
+  margin-top: 2rem;
+  width: 100px;
+  justify-content: center;
+  margin-bottom: 30px;
+  align-items: center;
+  margin-top: -10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 100px;
+}
+
+/***********************About***********************/
+
+.about-info{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+
+.about-info h1{
+  margin-top: 60px;
+
+}
+
+.about-images{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-info h4{
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  font-size: 18px !important;
+}
+/*********************progressbar************************/
+
+.progressbarr{
+ 
+  align-items: center;
+  margin-left: 100px;
+  margin-Right: 100px;
+  margin-bottom: 20px;
+}
+
+
+/***************Experience***********************/
+
+.experience-container{
+  display: flex;
+  align-items: center;
+  /* background-color: #d0d9d8; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+  
+}
+
+
+.experience-info{
+  /* background-color: #d0d9d8; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.experience-info h1{
+  margin-top: 50px;
+  color: #000;
+  
+}
